@@ -1,0 +1,123 @@
+.navbar {
+    z-index: 10000;
+    background: rgb(176, 22, 242);
+    background: linear-gradient(180deg, rgba(176, 22, 242, 1) 0%, rgba(0, 0, 0, 1) 9%, rgba(0, 0, 0, 1) 100%);
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 0px 8px rgba($color: #000000, $alpha: .6);
+    .navbar-dropdown-button {
+        border: none;
+    }
+    .brand {
+        display: flex;
+        align-items: center;
+        .desktop-links {
+            padding: 0 16px;
+            color: lightgrey;
+            font-family: 'Didact Gothic', sans-serif;
+            text-decoration: none;
+            font-size: .9em;
+        }
+        .desktop-links:hover {
+            color: white;
+            transition: 300ms ease-in-out;
+        }
+        .brandlogo {
+            padding: 0;
+            background-color: white;
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 60%;
+                height: 60%;
+            }
+        }
+        .brandname {
+            color: white;
+            padding: 0 12px;
+            text-decoration: none;
+            font-family: 'Didact Gothic', sans-serif;
+            font-size: 20px;
+        }
+        .active {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.navbar-dropdown {
+    top: 0;
+    left: -576px;
+    position: fixed;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transition: all ease-in-out .7s;
+    .info {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-family: 'Didact Gothic', sans-serif;
+        h2 {
+            color: white;
+        }
+        p {
+            color: grey;
+            padding: 10px;
+        }
+        .social-media-icons {
+            display: flex;
+            flex-direction: row;
+            img {
+                padding: 20px 10px;
+            }
+        }
+    }
+    .links {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 70px;
+        font-family: 'Didact Gothic', sans-serif;
+        a {
+            text-align: center;
+            width: 80%;
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            border: solid 1px white;
+            border-radius: 5px;
+            padding: 10px 0;
+        }
+    }
+}
+
+.open {
+    transform: translateX(576px);
+}
+
+@media only screen and (min-width: 576px) {
+    .navbar-dropdown {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .desktop-links {
+        display: none;
+    }
+}
+
+

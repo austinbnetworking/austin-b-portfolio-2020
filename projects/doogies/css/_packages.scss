@@ -1,0 +1,75 @@
+.packages {
+    margin: 20px;
+    margin-top: 40px;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color: white;
+    .package {
+        padding: 0;
+        border: 2px #333 solid;
+        margin-bottom: 20px;
+        ul {
+            padding: 30px 40px 80px 40px;
+            margin: 0;
+            margin-bottom: 130px;
+            list-style: none;
+            li {
+                padding: 10px;
+                button {
+                    position: absolute;
+                    bottom: 140px;
+                    margin: 20px auto;
+                    width: initial;
+                    padding: 8px 30px;
+                    border: none;
+                    font-family: 'Didact Gothic', sans-serif;
+                    background-color: rgb(176, 22, 242);
+                    box-shadow: 0 0 10px rgb(143, 143, 143);
+                    border-radius: 5px;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                button:hover {
+                    transition: all ease-in-out 250ms;
+                    box-shadow: 0 0 20px rgb(121, 121, 121);
+                }
+            }
+            .highlight {
+                color: rgb(176, 22, 242);
+            }
+        }
+        h4 {
+            background-color: rgb(221, 221, 221);
+            color: rgb(81, 7, 112);
+            padding: 20px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 1em;
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        .pricing {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            text-align: center;
+            div {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .package h4 {
+        font-size: .9em;
+    }
+}

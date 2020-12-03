@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doogies Events</title>
+    <meta name="description" content="Doogies Music Event Venue unnoficial website. This is a website portfolio developed by Austin Brown.">
+    <meta name="keywords" content="Music Venue, Event Venue, Website Portfolio, Venue">
+    <meta name="author" content="Austin Brown">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/all.css">
+    
+    <!-- SASS Links -->
+    <link rel="stylesheet" href="css/all.scss">
+    <link rel="stylesheet" href="css/_contact-form.scss">
+    <link rel="stylesheet" href="css/_faq.scss">
+    <link rel="stylesheet" href="css/_footer.scss">
+    <link rel="stylesheet" href="css/_gallery.scss">
+    <link rel="stylesheet" href="css/_hero.scss">
+    <link rel="stylesheet" href="css/_intro.scss">
+    <link rel="stylesheet" href="css/_navbar.scss">
+    <link rel="stylesheet" href="css/_packages.scss">
+    <link rel="stylesheet" href="css/_popup.scss">
+    
+    <!-- Custom JS -->
+    <script src="js/dropdown-toggler.js"></script>
+    <script src="js/popup.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navbar With Brand -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+
+    <div class="brand">
+        <a class="brandlogo" href="welcome.html">
+            <img src="images/doogies-logo.png" alt="Logo for Doogies Event Venue">
+        </a>
+        <a href="welcome.html" class="brandname">DOOGIES EVENTS</a>
+        <a class="desktop-links active" href="welcome.html">Home</a>
+        <a class="desktop-links" href="host.html">Host</a>
+        <a class="desktop-links" href="faqs.html">FAQ's</a>
+        <a class="desktop-links" href="contact.html">Contact</a>
+    </div>
+
+    <button class="navbar-toggler navbar-dropdown-button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+</nav>
+<!-- End of Navbar -->
+
+<!-- Navbar Dropdown Mark-up For Mobile -->
+<div class="navbar-dropdown">
+
+    <div class="links">
+        <a href="welcome.html">Home</a>
+        <a href="host.html">Host</a>
+        <a href="faqs.html">FAQ's</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="info">
+        <h2>DOOGIES VENUE</h2>
+        <div class="social-media-icons">
+            <a href="#"><img src="images/Facebook.png" alt="Small Facebook Icon"></a>
+            <a href="#"><img src="images/Google plus.png" alt="Small Google Plus Icon"></a>
+            <a href="#"><img src="images/Instagram.png" alt="Small Instagram Icon"></a>
+            <a href="#"><img src="images/Twitter.png" alt="Small Twitter Icon"></a>
+        </div>
+        <p>@Copyright Doogies</p>
+    </div>
+
+</div>
+<!-- End of Navbar Dropdown Markup -->
+
+<!-- Sales Announcement -->
+<div class="background-overlay"></div> <!-- Used to create a full browser overlay underneath the Popup-->
+<div class="popup">
+
+    <div class="close"><button onclick="closePopUp()">X</button></div><!-- Close button to stop displaying the Popup (Links to Javscript in the head section) -->
+
+    <div> <!-- Popup Content Goes Here: -->
+        <h2>Academic Project</h2>
+        <p>Thanks for stopping by, just a disclaimer this website is an academic portfolio and NOT an actual website.</p>
+    </div> <!-- End of Popup Content -->
+
+</div>
+<!-- End of Sales Announcement -->
+
+<!-- Hero Image -->
+<div class="splash-image">
+    <p>AMAZING</p>
+    <h2>EVENTS</h2>
+    <p>YES IT CAN BE DONE.</p>
+    <button><a href="">CONTACT</a></button>
+</div>
+<!-- End of Hero Image -->
+
+<!-- CTA -->
+<div class="cta">
+    <h4>TAKE A TOUR</h4>
+    <a href="gallery.html"><img src="images/galleryicon.png" alt="Small Gallery Icon"></a>
+    <a href="contact.html"><img src="images/mailicon.png" alt="Small Mail Icon"></a>
+</div>
+<!-- End of CTA-->
+
+<!-- Start of Content -->  
+<div class="web-layout">
+<!-- Left Section on Web -->
+<div>
+
+    <!-- Intro to Doogies Section -->
+    <div class="container intro">
+
+        <h2>About</h2>
+        <p>Our event venue is very spacious and offers a lot of amenities. We are glad to have been a part of weddings, ceremonies, birthday parties and many other events through the last 5 years. At Doogie's you can expect an amazing hosting service to fulfill your event dreams. We will never tell you how to run your event. Let us be a part of your next great experience!</p>
+
+    </div>
+    <!-- End of Intro to Doogies Section -->
+
+    <!-- Bootstrap Slideshow -->
+    <div id="homeslideshow" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#homeslideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#homeslideshow" data-slide-to="1"></li>
+            <li data-target="#homeslideshow" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/home-slideshow-image.jpg" alt="Doogies Event venue image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Amazing Weddings</h5>
+                    <p>Doogies offers a great venue for you marriage, let us cater your amazing day!</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gallery-images/gallery1.jpg" alt="Doogies Event venue image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Alcohol Provided</h5>
+                    <p>Our venue offers a full service bar and bartender. Or you can always BYOB.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gallery-images/gallery2.jpg" alt="Doogies Event venue image">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Decorations are Done In-House</h5>
+                    <p>We provide, set up and tear down all the decorations for your next event so you dont have to!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#homeslideshow" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#homeslideshow" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <!-- End of Bootstrap Slideshow -->
+
+</div>
+<!-- End of Left Section on Web -->
+
+<!-- Right Section on Web -->
+<div>
+
+    <!-- About Services Section -->
+    <div class="container intro">
+
+        <h2>Packages</h2>
+        <p>We offer 3 different packages to suit your needs! This makes the sign-up process easy and simple. Not to fret either, we are flexible and confident we can suit everyone's needs with our packages. Let us do the hard work!</p>
+
+    </div>
+
+    <div class="container intro">
+
+        <p>Doogies event venue is great for;</p>
+        <ul>
+            <li>Weddings</li>
+            <li>Receptions</li>
+            <li>Dances/Proms</li>
+            <li>Award Ceremonies</li>
+            <li>Fund-Raisers</li>
+            <li>Birthday Parties</li>
+            <li>Concerts</li>
+        </ul>
+
+    </div>
+
+    <div class="container intro">
+
+        <p>Doogies event hosts many great services such as;</p>
+        <ul>
+            <li>Full Service Bar's</li>
+            <li>Tables and Décor</li>
+            <li>Access to a restaurant-grade kitchen</li>
+            <li>We can seat 300 people</li>
+            <li>15-Foot Ceilings</li>
+            <li>24 x 24 Dance Floor</li>
+            <li>Access to high-quality Sound System</li>
+        </ul>
+
+    </div>
+    <!-- End of About Services Section -->
+
+</div>
+<!-- End of Right Section on Web -->
+</div>
+<!-- End of Content --> 
+
+<!-- Newsletter Pop-up & Gallery -->
+<div class="container newsletter-gallery">
+
+    <div class="container newsletter">
+
+        <h2>Sign Up for a Newsletter</h2>
+
+        <form>
+
+            <div class="form-group">
+            
+                <label for="input-name">Your Name</label>
+                <input type="name" class="form-control" id="input-name" placeholder="John Doe">
+            
+            </div>
+                    
+            <div class="form-group">
+
+                <label for="input-email">Email address</label>
+                <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            
+            </div>
+
+            <div class="form-group">
+            
+                <label for="input-comments">Any comments</label>
+                <textarea class="form-control" id="input-comments" rows="3"></textarea>
+            
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        
+        </form>
+
+    </div>
+
+    <!-- Bootstrap Slideshow -->
+    <div id="footerslideshow" class="carousel footer-slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#footerslideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#footerslideshow" data-slide-to="1"></li>
+            <li data-target="#footerslideshow" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/home-slideshow-image.jpg" alt="Doogies Event venue image">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gallery-images/gallery1.jpg" alt="Doogies Event venue image">
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/gallery-images/gallery2.jpg" alt="Doogies Event venue image">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#footerslideshow" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#footerslideshow" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <!-- End of Bootstrap Slideshow -->
+
+</div>    
+<!-- End of Newsletter & Gallery -->
+
+<!-- Footer -->
+<div class="container footer">
+    
+    <h2>DOOGIES VENUE</h2>
+
+    <div class="address">
+        <p>123 Your St.</p>
+        <p>Your Town, XX</p>
+        <p>(999) - 111 - 2222</p>
+    </div>
+
+    <div class="social-media-icons">
+        <a href="#"><img src="images/Facebook.png" alt="Small Facebook Icon"></a>
+        <a href="#"><img src="images/Google plus.png" alt="Small Google Plus Icon"></a>
+        <a href="#"><img src="images/Instagram.png" alt="Small Instagram Icon"></a>
+        <a href="#"><img src="images/Twitter.png" alt="Small Twitter Icon"></a>
+    </div>
+
+    <p style="opacity: .7;">@Copyright Doogies</p>
+
+</div>
+<!-- End of Footer -->
+
+<!-- Bootstrap Script-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

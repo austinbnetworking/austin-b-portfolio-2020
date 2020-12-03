@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.web-layout {
+    display: flex;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: auto auto 40px auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .web-layout {
+        flex-direction: column;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+
+@import "./navbar";
+
+@import "./hero";
+
+@import "./intro";
+
+@import "./footer";
+
+@import "./gallery";
+
+@import "./packages";
+
+@import "./faq";
+
+@import "./contact-form";
+
+@import "./popup";
+
+body {
+    background: rgb(158, 158, 158);
+    background: linear-gradient(
+        135deg,
+        rgba(158, 158, 158, 1) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(158, 158, 158, 1) 100%
+    );
+}

@@ -1,0 +1,67 @@
+.home {
+    padding: 20px;
+    padding-bottom: 8%;
+    padding-right: 35%;
+    h1 {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+    }
+    p {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 200;
+        max-width: 540px;
+        font-size: 18px;
+        span {
+            text-decoration: none;
+            color: $accent2;
+            cursor: pointer;
+        }
+    }
+    button {
+        margin-top: 10px;
+        background: none;
+        border-radius: 60px;
+        border: 2px solid black;
+        padding: 13px 30px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 200;
+        img {
+            vertical-align: middle;
+            padding-left: 10px;
+            height: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .home {
+        padding-bottom: 20%;
+        padding-right: 15%;
+        padding-left: 8%;
+        p {
+            font-family: "Titillium Web", sans-serif;
+            font-weight: 200;
+            width: 100%;
+            font-size: 16px;
+            span {
+                text-decoration: none;
+                color: $accent2;
+                cursor: pointer;
+            }
+        }
+        button {
+            margin-top: 10px;
+            border-radius: 60px;
+            padding: 13px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            img {
+                vertical-align: middle;
+                padding-left: 10px;
+                height: 18px;
+            }
+        }
+    }
+}

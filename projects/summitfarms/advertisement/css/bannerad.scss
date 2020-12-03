@@ -1,0 +1,114 @@
+/* Fonts used on this ad, from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+
+/* Mixin for defining size & placement */
+@mixin banner-content-placement($float, $width, $height) {
+    float: $float;
+    width: $width;
+    height: $height;
+}
+
+/*  Mobile Banner size 320x100  */
+
+/* Styling for the Desktop Banner Ad */
+.bannerad {
+    /* Formatting for the Entire Banner Ad */
+    position: relative;
+    left: 0;
+    width: 728px; /* Standard Banner Ad width */
+    height: 90px; /* Standard Banner Ad height */
+    margin: 10px auto;
+    border: 2px solid #347cda;
+    animation: flipin 4s 1 forwards, slidein 4s 1 forwards;
+    .closebtn {
+        /* Close button that shows on the top right */
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+    .left {
+        /* Mixin that controls float, width, and height for the left side */
+        @include banner-content-placement(left, 44%, 100%);
+        animation: fadein 4s 1 forwards;
+        img {
+            width: 100%;
+        }
+    }
+    .right {
+        /* Mixin that controls float, width, and height for the right side */
+        @include banner-content-placement(right, 56%, 100%);
+        background-color: darkgrey;
+        overflow: hidden;
+        /* Basic Styling for Content on the right side */
+        h2 {
+            position: relative;
+            font-size: 15px;
+            letter-spacing: 2px;
+            background-color: darkgrey;
+            margin: 0;
+            font-family: "Manrope", sans-serif;
+            animation: slidein 3s 4s 1 forwards;
+            top: -250px;
+        }
+        button {
+            position: relative;
+            font-family: "Boogaloo", cursive;
+            letter-spacing: 1px;
+            background-color: #347cda;
+            border: none;
+            color: white;
+            margin: 0 auto;
+            padding: 10px 32px;
+            text-align: center;
+            font-size: 16px;
+            opacity: 0.5;
+            transition: 0.3s;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+            animation: slidein 2s 4s 1 forwards, rainbow-bg 10s infinite forwards;
+            top: -250px;
+        }
+        button:hover {
+            opacity: 1;
+            transform: scale(1.3);
+            transition: all ease-in-out 200ms;
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .bannerad {
+        /* Formatting for the Entire Banner Ad */
+        position: relative;
+        left: 0;
+        width: 320px; /* Standard Banner Ad width */
+        height: 100px; /* Standard Banner Ad height */
+        margin: 10px auto;
+        border: 2px solid #347cda;
+        .right {
+            span {
+                display: none;
+            }
+            h2 {
+                padding: 5px;
+            }
+        }
+        .bannerad-mobile {
+            display: block;
+            height: 100%;
+        }
+        .bannerad-desktop {
+            display: none;
+        }
+    }
+}    
+
+@media only screen and (min-width: 771px) {
+    .bannerad-mobile {
+        display: none;
+    }
+}
+
+@import "./bannerad-animation";
