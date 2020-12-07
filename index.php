@@ -38,7 +38,7 @@
             </div>
             <div class="social_media">
                 <!-- Social Media Icons -->
-                <a target="blank" href="https://www.linkedin.com/in/austinbnetworking/"><img src="icons/github.png" alt="LinkedIn Logo"></a>
+                <a target="blank" href="https://github.com/austinbnetworking/austinb.net"><img src="icons/github.png" alt="GitHub Logo"></a>
                 <a target="blank" href="https://www.linkedin.com/in/austinbnetworking/"><img src="icons/linkedin.png" alt="LinkedIn Logo"></a>
             </div>
         </div>
