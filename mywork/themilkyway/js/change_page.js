@@ -1,7 +1,7 @@
 function change_page(str) {
 
     var xmlhttp = new XMLHttpRequest();
-    let url = "php/" + str + ".php?q=";
+    let url = "php/" + str + ".php";
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             response = this.responseText;
