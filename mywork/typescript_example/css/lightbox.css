@@ -1,0 +1,133 @@
+#gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#gallery .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 900px;
+}
+
+#gallery .row img {
+  width: 31%;
+  min-height: 250px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#gallery .row img:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+#lightbox_container {
+  background-color: #00000099;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+#lightbox_container .lightbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+#lightbox_container .lightbox img {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#lightbox_container .lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 40px;
+  color: white;
+}
+
+#lightbox_container .lightbox .prev,
+#lightbox_container .lightbox .next {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 50px;
+  color: white;
+  margin: 40px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+  #gallery {
+    width: initial;
+    height: initial;
+  }
+  #gallery .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #gallery .row img {
+    width: 400px;
+    height: 400px;
+  }
+  #lightbox_container .lightbox .prev,
+  #lightbox_container .lightbox .next {
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #gallery .row img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #gallery .row img {
+    width: 250px;
+    height: 250px;
+  }
+}
+/*# sourceMappingURL=lightbox.css.map */

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- COMPILED CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- Javascript for Gallery -->
+    <!-- Must add images in gallery to JS Array -->
+    <script src="lightbox.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Lightbox Gallery -->
+    <div id="gallery">
+
+        <h2>Welcome to Responsive Gallery</h2>
+
+        <div class="row">
+            <img src="images/1.jpg" onclick="open_modal();change_image(0)" alt=" Template Image">
+            <img src="images/2.jpg" onclick="open_modal();change_image(1)" alt=" Template Image">
+            <img src="images/3.jpg" onclick="open_modal();change_image(2)" alt=" Template Image">
+        </div>
+
+        <div class="row">
+            <img src="images/4.jpg" onclick="open_modal();change_image(3)" alt=" Template Image">
+            <img src="images/5.jpg" onclick="open_modal();change_image(4)" alt=" Template Image">
+            <img src="images/6.jpg" onclick="open_modal();change_image(5)" alt=" Template Image">
+        </div>
+
+    </div>
+
+    <div id="lightbox_container">
+
+        <div class="lightbox">
+            <div class="close" onclick="close_modal()"> &#10006; </div>
+
+            <div class="prev" onclick="next_slide(-1)"> &#60; </div>
+            <div>
+                <img id="active_image" name="active_image" src="" alt="">
+            </div>
+            <div class="next" onclick="next_slide(1)"> &#62; </div>
+        </div>
+
+    </div>
+    <!-- End of Lightbox Gallery -->
+
+</body>
+
+</html>

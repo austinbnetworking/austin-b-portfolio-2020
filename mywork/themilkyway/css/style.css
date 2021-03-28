@@ -1,0 +1,263 @@
+/* Variables */
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Components */
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 10px;
+}
+
+p,
+ul {
+  line-height: 1.8;
+}
+
+a {
+  color: #00a896;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #284b63;
+  -webkit-transition: ease-in-out 170ms;
+  transition: ease-in-out 170ms;
+}
+
+.button {
+  background-color: #ffffff;
+  border-radius: 3px;
+  padding: 8px 18px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: black;
+}
+
+.button:hover {
+  background-color: #284b63;
+  -webkit-transition: ease-in-out 170ms;
+  transition: ease-in-out 170ms;
+  color: #ffffff;
+}
+
+.button:active {
+  background-color: #353535;
+  -webkit-transition: ease-in-out 60ms;
+  transition: ease-in-out 60ms;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 3px;
+  padding: 4px;
+  background-color: #d9d9d9;
+}
+
+.img img {
+  width: 100%;
+}
+
+.img p {
+  padding: 0 5px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.large {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.header {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.sub-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #353535;
+}
+
+.body-14 {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  color: black;
+}
+
+.body-18 {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  color: black;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.extra-bold {
+  font-weight: 800;
+}
+
+.indent {
+  text-indent: 10px;
+}
+
+/* Sections */
+.landing {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: white url(../images/bg2w-overlay.jpg) center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+nav div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d9d9d9;
+  color: black;
+}
+
+nav div p {
+  padding: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+nav div p:hover {
+  background-color: #284b63;
+  -webkit-transition: ease-in-out 170ms;
+  transition: ease-in-out 170ms;
+  color: #ffffff;
+}
+
+nav div p:active {
+  background-color: #353535;
+  -webkit-transition: ease-in-out 60ms;
+  transition: ease-in-out 60ms;
+  color: #ffffff;
+}
+
+nav div .nav-open, nav div .nav-close {
+  display: none;
+}
+
+.planet {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #353535;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer div {
+  max-width: 800px;
+  padding: 40px;
+  margin: auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 732px) {
+  nav {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  nav div {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  nav div .nav-close {
+    display: initial;
+  }
+  nav div p:hover {
+    background-color: initial;
+    -webkit-transition: initial;
+    transition: initial;
+    color: initial;
+  }
+  nav div p:active {
+    background-color: #353535;
+    color: #ffffff;
+  }
+  nav .nav-close {
+    display: initial;
+  }
+  nav .toggle {
+    top: -470px;
+  }
+  nav .toggle .nav-open {
+    display: initial;
+  }
+  nav .toggle .nav-close {
+    display: none;
+  }
+  .planet,
+  .footer div {
+    padding: 25px 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

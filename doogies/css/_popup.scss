@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; //Required
+}
+
+.background-overlay { //All Required
+    position: fixed;
+    z-index: 10000;//Must be one lower than the Popup
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    animation: bgoverlay 2s ease forwards;
+}
+
+.popup {
+    //Formatting: All Required
+    z-index: 10001; //Used so the Popup displays above all other content
+    position: fixed;
+    top: 50%; //Used for centering the content
+    left: 50%; //Used for centering the content
+    transform: translate(-50%, -50%); //Used for centering the content
+
+    //Animation: All Required
+    animation: slidein 2s ease forwards; // Animation used to make the Popup Show
+    
+    //Optional Styling:
+    width: 70%;//Anything Higher than 60% Causes Responsiveness Issues on Smaller Devices
+    max-width: 1000px;
+    padding: 50px;
+    background-color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    line-height: 2;
+    border: 10px solid rgb(90, 27, 117);
+    border-radius: 5px;
+    transition: all ease-in-out 300ms;
+
+    .close { //All Required
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        button {
+            border: none;
+            background-color: #888;
+            color: rgb(90, 27, 117);
+            padding: 5px 15px;
+        }
+    }
+
+}
+
+//Animation for the Popup
+@keyframes slidein {
+    0% {
+        left: -50%;
+    }
+    20% {
+        left: -50%;
+    }
+    80% {
+        left: 55%;
+    }
+    100% {
+        left: 50%;   
+    }
+}
+
+
+@media only screen and (min-width: 576px) {
+    .popup {
+        width: 85%;
+    }
+}
+
+//Animation for the Background Overlay
+@keyframes bgoverlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;  
+    }
+}

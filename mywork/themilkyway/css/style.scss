@@ -1,0 +1,211 @@
+/* Variables */
+$body-text: black;
+$dark: #353535;
+$light: #ffffff;
+$grey: #d9d9d9;
+$primary: #284b63;
+$accent: #00a896;
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+/* Components */
+h1,
+h2,
+h3,
+p,
+ul {
+    padding: 10px;
+}
+p,
+ul {
+    line-height: 1.8;
+}
+a {
+    color: $accent;
+    text-decoration: none;
+}
+a:hover {
+    color: $primary;
+    transition: ease-in-out 170ms;
+}
+.button {
+    background-color: $light;
+    border-radius: 3px;
+    padding: 8px 18px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: $body-text;
+}
+.button:hover {
+    background-color: $primary;
+    transition: ease-in-out 170ms;
+    color: $light;
+}
+.button:active {
+    background-color: $dark;
+    transition: ease-in-out 60ms;
+    color: $light;
+}
+ul {
+    list-style: none;
+    li {
+        margin-bottom: 10px;
+    }
+}
+.img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: $grey;
+    img {
+        width: 100%;
+    }
+    p {
+        padding: 0 5px;
+        font-size: 14px;
+        font-style: italic;
+    }
+}
+.large {
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+.header {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: $dark;
+}
+.sub-header {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: $dark;
+}
+.body-14 {
+    font-family: "Lora", serif;
+    font-size: 16px;
+    color: $body-text;
+}
+.body-18 {
+    font-family: "Lora", serif;
+    font-size: 18px;
+    color: $body-text;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 600;
+}
+.extra-bold {
+    font-weight: 800;
+}
+.indent {
+    text-indent: 10px;
+}
+/* Sections */
+.landing {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background: white url(../images/bg2w-overlay.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+nav {
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: $grey;
+        color: $body-text;
+        p {
+            padding: 15px;
+            cursor: pointer;
+            user-select: none;
+        }
+        p:hover {
+            background-color: $primary;
+            transition: ease-in-out 170ms;
+            color: $light;
+        }
+        p:active {
+            background-color: $dark;
+            transition: ease-in-out 60ms;
+            color: $light;
+        }
+        .nav-open, .nav-close {
+            display: none;
+        }
+    }
+}
+.planet {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+.footer {
+    width: 100%;
+    background-color: $dark;
+    color: $light;
+    display: flex;
+    div {
+        max-width: 800px;
+        padding: 40px;
+        margin: auto;
+    }
+}
+/* Media Queries */
+@media only screen and (max-width: 732px) {
+    nav {
+        position: relative;
+        margin-bottom: 50px;
+        div {
+            position: absolute;
+            flex-direction: column;
+            text-align: center;
+            .nav-close {
+                display: initial;
+            }
+            p:hover {
+                background-color: initial;
+                transition: initial;
+                color: initial;
+            }
+            p:active {
+                background-color: $dark;
+                color: $light;
+            }
+        }
+        .nav-close {
+            display: initial;
+        }
+        .toggle {
+            top: -470px;
+            .nav-open {
+                display: initial;
+            }
+            .nav-close {
+                display: none;
+            }
+        }
+    }
+    .planet, 
+    .footer div {
+        padding: 25px 15px;
+    }
+}

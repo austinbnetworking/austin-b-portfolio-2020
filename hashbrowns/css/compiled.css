@@ -1,0 +1,11 @@
+/* Font Used - Titillium Web - Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap");
+/* Color Variables */
+/* Universal */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* All SCSS Imports for Site Design */
+/*# sourceMappingURL=compiled.css.map */

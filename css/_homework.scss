@@ -1,104 +1,39 @@
-.sign_in {
-    width: 40%;
-    h2 {
-        width: 100%;
-        margin: none;
-        font-family: "Titillium Web", sans-serif;
-        font-weight: 600;
-        font-size: 28px;
-        text-align: center;
-        background-color: $accent2;
-        margin: 0;
-        padding: 20px 40px;
-    }
-    .signin_error {
-        width: 100%;
-        margin: none;
-        font-family: "Titillium Web", sans-serif;
-        font-weight: 200;
-        font-size: 18px;
-        text-align: center;
-        background-color: $accent;
-        margin: 0;
-        padding: 10px 40px;
-    }
-    form {
-        width: 100%;
-        padding: 40px;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h2 {
-            font-family: "Titillium Web", sans-serif;
-            font-weight: 800;
-            font-size: 28px;
-            margin: 10px;
-        }
-        p {
-            font-family: "Titillium Web", sans-serif;
-            text-align: center;
-            font-weight: 200;
-            font-size: 18px;
-            width: 80%;
-            max-width: 450px;
-            margin: 10px;
-            span {
-                color: $accent2;
-            }
-        }
-        input,
-        textarea {
-            border: 1px solid $accent2;
-            border-radius: 12px;
-            padding: 8px;
-            padding-left: 20px;
-            margin: 10px;
-            font-family: "Titillium Web", sans-serif;
-            font-weight: 200;
-            font-size: 16px;
-            width: 80%;
-            max-width: 450px;
-        }
+.homework {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    z-index: 5;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px;
+    a {
+        text-decoration: none;
+        color: black;
     }
 }
-.projects_list {
-    width: 50%;
-    max-height: 70%;
-    h2 {
-        width: 100%;
-        margin: none;
-        font-family: "Titillium Web", sans-serif;
-        font-weight: 600;
-        font-size: 28px;
-        text-align: center;
-        background-color: $accent2;
-        margin: 0;
-        padding: 12px 0;
-    }
-    ul {
+
+.homework_page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.homework_list {
+    background-color: white;
+    padding: 20px;
+    li {
         list-style: none;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        overflow-y: scroll;
-        li {
-            background-color: white;
-            width: 100%;
-            padding: 12px 0;
-            text-align: center;
-            a {
-                text-decoration: none;
-                font-family: "Titillium Web", sans-serif;
-                font-weight: 200;
-                color: #222;
-                font-size: 18px;
-            }
-        }
-        li:hover {
-            background-color: $accent;
-            transition: ease-in 150ms;
-        }
+        margin: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: $accent;
+        transition: all ease-in 200ms;
     }
 }

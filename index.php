@@ -5,7 +5,7 @@
     <!--
     Web Developer Portfolio
     Author: Austin Brown
-    Last Modified Date: 11/26/20
+    Last Modified Date: 12/19/20
     Thank you for viewing!
     -->
     <title>Austin Brown Portfolio</title>
@@ -50,6 +50,9 @@
             <button onclick="change_page('contact'), menu_toggle()"><span>Contact</span><img src="icons/mail.png" alt="Home Icon"></button>
         </div>
     </nav>
+    <div class="homework">
+        <a href="mywork/homework.php">View my homework</a>
+    </div>
     <!-- Page Content -->
     <section class="page_content">
         <!-- Ajax Request Location -->
